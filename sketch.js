@@ -29,7 +29,7 @@ function setup() {
   animation_50Button = createButton('Click me');
   //animation_50Button.position(width/3, height/2);
   animation_50Button.mouseClicked(animation_50);
-  animation_50Button.style('position: absolute; top: 0%; padding: 0.3vw; background-color: black; border: solid #00ffff 0.15vw; color: #00ffff; font-family: Verdana');
+  animation_50Button.style('position: absolute; top: 0%; padding: 0.3vw; background-color: black; border: solid #00ffff 0.15vw; transform: translateX(-100%); color: #00ffff; font-family: Verdana');
   animation_50Button.parent(buttonsContainer);
 
   // button to change color (base color = yellow)
