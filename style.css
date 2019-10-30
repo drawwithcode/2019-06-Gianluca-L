@@ -8,13 +8,27 @@
   border-style: solid;
   border-width: 0.15vw;
   border-radius: 50%;
-
+  transform: translate(-50%,-50%);
 }
 .ballPos_1 {
 
 }
 .ballPos_2 {
 
+}
+.scaling {
+    animation: scaling 0.5s infinite alternate;
+}
+.scaling_singleBall {
+    animation: scaling_singleBall 0.5s infinite alternate;
+}
+@keyframes scaling {
+  from {width: 1vw; height: 1vw}
+    to {width: 2vw; height: 2vw}
+}
+@keyframes scaling_singleBall {
+  from {width: 1vw; height: 1vw}
+    to {width: 4vw; height: 4vw}
 }
 .animation_50 {
     animation: translate_50 1s infinite alternate;
@@ -47,4 +61,41 @@
 .white {
   border-color: #ffffff;
   color: #ffffff;
+}
+#bigButton {
+  animation: bigButtonColor 1s infinite;
+}
+.bigButtonColorAnimation {
+  animation: bigButtonColor 1s infinite;
+}
+@keyframes bigButtonColor{
+  0% {border-color: #ffff00; color: #ffff00}
+ 25% {  border-color: #ffffff; color: #ffffff}
+ 50% {  border-color: #00ffff; color: #00ffff}
+ 75% {  border-color: #FF00FF; color: #FF00FF}
+}
+.bB_Center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.bB_Up {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+.bB_Left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.bB_Right {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+.bB_Down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
 }
