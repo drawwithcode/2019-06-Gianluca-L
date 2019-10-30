@@ -1,0 +1,50 @@
+/* canvas {
+  display: block;
+} */
+#ball {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #000000;
+  border-style: solid;
+  border-width: 0.15vw;
+  border-radius: 50%;
+
+}
+.ballPos_1 {
+
+}
+.ballPos_2 {
+
+}
+.animation_50 {
+    animation: translate_50 1s infinite alternate;
+}
+@keyframes translate_50 {
+  from {}
+    to {top: ; left: 50%}
+}
+#buttonsContainer{
+  /* background-color: white; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  height: 30vh;
+  transform: translate(-50%,-50%);
+}
+.cyan {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+.magenta {
+  border-color: #FF00FF;
+  color: #FF00FF;
+}
+.yellow {
+  border-color: #ffff00;
+  color: #ffff00;
+}
+.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
