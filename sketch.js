@@ -1,13 +1,9 @@
-function preload() {
-  // put preload code here
-}
 var balls = [];
 var mouseC = 0; // mouseClicked
 var animation_50Button;
 var colorButton;
 var bigButton;
 var bBContainer;
-var bb = 0;
 var bigButtonClasses = ['bB_Center','bB_Left','bB_Down','bB_Right'];
 var colorList = ['yellow', 'cyan', 'magenta', 'white'];
 var j = 0; // counter to pick a color from ColorList
@@ -29,7 +25,7 @@ function setup() {
     }
   }
 
-  // button to trigger animation_50 (cyan)
+  // button to trigger animation_50 (cyan) from CSS
   animation_50Button = createButton('Click me');
   //animation_50Button.position(width/3, height/2);
   animation_50Button.mouseClicked(animation_50);
@@ -53,7 +49,6 @@ function setup() {
   // don't click me button (bigButton)
   bigButton = createButton('Don\'t click me');
   bigButton.id('bigButton');
-  // bigButton.addClass('bigButtonColorAnimation');
   bigButton.addClass('bB_Center'); // centered in the div
   bigButton.style('transform: translate(-50%, -50%); padding: 1.5vw; background-color: black; border-style: solid; border-width: 0.15vw; font-family: Verdana; font-size: 0.8vw');
 
@@ -90,15 +85,6 @@ function runAway() {
 }
 
 function animation_50() {
-  // mouseC++;
-  // for (var i = 0; i < balls.length; i++) {
-  //   if (mouseC == 1) {
-  //     balls[i].addClass('animation_50');
-  //   } else {
-  //     balls[i].removeClass('animation_50')
-  //     mouseC = 0;
-  //   }
-  //   }
   for (var i = 0; i < balls.length; i++) {
     balls[i].toggleClass('animation_50');
   }

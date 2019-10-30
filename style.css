@@ -1,6 +1,6 @@
-/* canvas {
-  display: block;
-} */
+body {
+  overflow-y: hidden;
+}
 #ball {
   width: 1.5vw;
   height: 1.5vw;
